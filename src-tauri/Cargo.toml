@@ -1,0 +1,26 @@
+[package]
+name = "voding-hub"
+version = "0.1.0"
+description = "AI Coding Tools Configuration Manager"
+authors = ["yangtx"]
+edition = "2021"
+
+[lib]
+name = "voding_hub_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+tauri-plugin-log = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+rusqlite = { version = "0.31", features = ["bundled"] }
+notify = "6"
+thiserror = "1"
+dirs = "5"
+
