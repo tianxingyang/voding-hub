@@ -2,6 +2,8 @@ mod claude;
 mod codex;
 mod gemini;
 mod opencode;
+#[cfg(test)]
+mod tests;
 
 pub use claude::ClaudeAdapter;
 pub use codex::CodexAdapter;
